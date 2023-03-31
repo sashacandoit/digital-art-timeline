@@ -1,0 +1,139 @@
+body {
+	
+  font-family: "Aeonik", sans-serif;
+}
+
+.hero-section {
+  height: 100vh;
+}
+
+.timeline-section {
+  display: grid;
+  grid-template-columns: 50% 50%; 
+}
+
+.timeline-text-col {
+  justify-self: center;
+  padding: 0 6rem;
+}
+
+.timeline-img-col {
+  justify-self: start;
+}
+
+
+.line {
+	vertical-align: middle;
+	position: fixed;
+	width: 2px;
+	height: 100%;
+}
+
+hr {
+	margin: 20px 0 30px 0;
+}
+
+h1 {
+  font-size: 110px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.title-lt {
+  font-weight: 200;
+}
+
+h2 {
+	font-size: 90px;
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 20px;
+	font-weight: 100;
+}
+
+div.accordion {
+  padding: 0 2rem;
+}
+
+.accordion input {
+	display: none;
+}
+
+.accordion label {
+	font-weight: 500;
+	text-align: center;
+	font-size: 26px;
+	text-transform: capitalize;
+	line-height: 32px;
+	color: black;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	z-index: 10;
+}
+
+.accordion input:checked + label + .content {
+	max-height: 999em;
+	transition: ease 400ms;
+	position: relative;
+	opacity: 1;
+}
+
+.icon-block {
+	display: flex;
+	height: 20px;
+	margin-top: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+.collapse {
+	height: 15px;
+	visibility: hidden;
+	position: absolute;
+	align-self: center;
+}
+
+.expand {
+	height: 15px;
+	position: absolute;
+	display: flex;
+	align-self: center;
+}
+
+.accordion input:checked + label .collapse {
+	visibility: visible;
+}
+
+.accordion input:checked + label .expand {
+	visibility: hidden;
+}
+
+.accordion label + .content {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	padding: 5px 0 5px 0;
+	opacity: 0;
+}
+
+.date-description {
+	margin: 5px 0 20px 0;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.date-detail {
+	margin: auto;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.accordion {
+	margin: auto;
+	padding-bottom: 10px;
+	width: 100%;
+	position: relative;
+	max-width: 800px;
+}
