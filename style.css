@@ -1,32 +1,43 @@
 body {
-	
+	margin: 0;
   font-family: "Aeonik", sans-serif;
 }
 
 .hero-section {
-  height: 100vh;
+  height: 80vh;
+  padding: 1rem 8rem 8rem 3rem;
+  background-color: white;
+  position: relative;
+  z-index: 10;
 }
 
 .timeline-section {
   display: grid;
   grid-template-columns: 50% 50%; 
+  border: 1px solid teal;
 }
 
 .timeline-text-col {
   justify-self: center;
-  padding: 0 6rem;
+  padding: 0 5rem;
+  border: 1px solid pink;
 }
 
 .timeline-img-col {
   justify-self: start;
 }
 
-
 .line {
-	vertical-align: middle;
 	position: fixed;
+  top: 0;
+  left: 25%;
 	width: 2px;
-	height: 100%;
+  z-index: 1;
+}
+
+h3.subhead-description {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 hr {
@@ -37,6 +48,7 @@ h1 {
   font-size: 110px;
   text-align: left;
   font-weight: 700;
+  margin-bottom: 40px;
 }
 
 .title-lt {
@@ -44,15 +56,32 @@ h1 {
 }
 
 h2 {
+  position: relative;;
 	font-size: 90px;
+  line-height: 10rem;
 	text-align: center;
-	margin-top: 150px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
+  margin-top: 0px;
 	font-weight: 100;
+  z-index: 10;
+  background-color: white;
 }
 
 div.accordion {
-  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 2rem 150px 2rem;
+  border: 1px solid skyblue;
+}
+
+section.accordion {
+  position: relative;
+  padding-bottom: 10px;
+  max-width: 800px;
+  z-index: 10;
+  background-color: white;
 }
 
 .accordion input {
@@ -66,7 +95,7 @@ div.accordion {
 	text-transform: capitalize;
 	line-height: 32px;
 	color: black;
-	padding: 10px 0px 10px 0px;
+	padding: 10px 0px;
 	display: block;
 	cursor: pointer;
 	position: relative;
@@ -130,10 +159,4 @@ div.accordion {
 	font-weight: 500;
 }
 
-.accordion {
-	margin: auto;
-	padding-bottom: 10px;
-	width: 100%;
-	position: relative;
-	max-width: 800px;
-}
+
